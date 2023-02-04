@@ -1,0 +1,45 @@
+
+<hr>
+<div class="container">
+    <form action="">
+        <div class="row form-group">
+            <div class="col-sm-6">
+                <label>First Name</label>
+                <input type="text"  class="form-control">
+            </div>
+            <div class="col-sm-6" >
+                <label >Last Name</label>
+                <input type="text"  class="form-control">
+            </div>
+        </div>
+        <div class="row form-group"  >
+            <div class="col-sm-6 ">
+                <label for="LName">How should we contact you ? </label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" (click)="toogleTag('Phone')">
+                    <label class="form-check-label" for="inlineRadio1">Phone </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" (click)="toogleTag('Email')">
+                    <label class="form-check-label" for="inlineRadio2" >Eamil</label>
+                  </div>
+            </div>
+            <div class="col-sm-6" *ngIf="Phone">
+                <label>Phone Number</label>
+                <input type="text"  class="form-control">
+            </div>
+            <div class="col-sm-6"  *ngIf="Email">
+                <label>Email </label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+
+
+
+
+

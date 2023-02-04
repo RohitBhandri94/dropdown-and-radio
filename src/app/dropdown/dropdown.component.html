@@ -1,0 +1,40 @@
+<div class="container">
+  
+        <div class="row ">
+            <div class="col-sm-6">
+                <label>First Name</label>
+                <input type="text"  class="form-control">
+            </div>
+            <div class="col-sm-6" >
+                <label >Last Name</label>
+                <input type="text"  class="form-control">
+            </div>
+        </div>
+    
+        <div class="row "  >
+            <div class="col-sm-6" >
+                <label for="LName">How should we contact you ? </label>
+                <select class="form-control" (click)="toogleTag($event)" >
+                    <option selected >Choose option</option>
+                    <option>Phone Number</option>
+                    <option>Email</option>
+                </select>
+            </div>
+            <div class="col-sm-6" *ngIf="Phone">
+                <label>Phone Number</label>
+                <input type="text"  class="form-control">
+            </div>
+            <div class="col-sm-6"  *ngIf="Email">
+                <label>Email </label>
+                <input type="text" class="form-control">
+            </div>
+            
+        </div>
+  
+</div>
+
+
+
+
+
+
